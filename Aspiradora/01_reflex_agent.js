@@ -84,7 +84,7 @@ function visited_states(){
  for (let index = 0; index < states_list.length; index++) {
    if (states_list[index])count++;
  }
- if(count ==8){stop = true;}
+ if(count ==16){stop = true;}
   return count;
 }
 
