@@ -15,9 +15,17 @@ function test(states){
       	if (action_result == "CLEAN"){
         	if (location == "A") states[1] = "CLEAN";
          	else if (location == "B") states[2] = "CLEAN";
+			if (location == "A") states[1] = "CLEAN";
+         	else if (location == "B") states[2] = "CLEAN";
       	}
       	if (action_result == "RIGHT") states[0] = "B";
-      	if (action_result == "LEFT") states[0] = "A";	
+		if (action_result == "RIGHT") states[0] = "B";
+      	if (action_result == "LEFT") states[0] = "A";
+        if (action_result == "LEFT") states[0] = "A"; 		
+		if (action_result == "CLEAN"){
+        	if (location == "B") states[2] = "CLEAN";
+         	else if (location == "A") states[1] = "CLEAN";
+      	}
 		if (action_result == "CLEAN"){
         	if (location == "B") states[2] = "CLEAN";
          	else if (location == "A") states[1] = "CLEAN";
